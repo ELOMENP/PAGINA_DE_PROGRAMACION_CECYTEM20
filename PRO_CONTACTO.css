@@ -1,0 +1,252 @@
+.World {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: url(Icono.png);
+    animation: World 20s linear infinite;
+    position: absolute;
+    margin-left: 20px;
+}
+.larger-circle {
+    width: 150px; /* Set the width of the larger circle */
+    height: 150px; /* Set the height of the larger circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: rgba(255, 255, 255, 1); /* Adjust background color and opacity */
+    position: absolute; /* Position it absolutely */
+    top: -3%; /* Align it to the top */
+    left: 5%; /* Align it to the center horizontally */
+    transform: translateX(-50%); /* Adjust for horizontal centering */
+    z-index: -1; /* Move it behind other elements */
+}
+@keyframes World{
+    0%{
+        background-position-x: 0; 
+    }
+    100%{
+        background-position-x: -2000px; 
+    }
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+/* Estilo base para el título */
+#titulo {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+  position: relative;
+}
+
+/* Estilo para el título borroso */
+.brillo {
+  color: rgba(0, 0, 255, 0.5); /* Color azul con opacidad */
+  text-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+  transition: text-shadow 0.5s;
+}
+
+/* Estilo para el título con brillo azul al pasar el cursor */
+#titulo:hover {
+  color: white;
+  text-shadow: 0 0 20px rgba(0, 0, 255, 1); /* Aumentamos el brillo al pasar el cursor */
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+  width: 100%;
+  overflow: hidden;
+}
+/* Estilos para el encabezado */
+header {
+    background-color: #28a745; /* Color verde */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: fixed; /* Fijar en la parte superior */
+    width: 100%; /* Ocupar todo el ancho */
+    top: 0; /* Alinear arriba */
+    z-index: 999; /* Asegurar que esté por encima del contenido */
+}
+
+/* Estilos para el título */
+.titles {
+    margin-bottom: 20px;
+}
+#colorear{
+    background-color: aqua;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #28a745; /* Color verde */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8f9fa;
+}
+.vid-container{
+  width: 100%;
+  height:100%;
+  overflow:hidden;
+}
+.ring {
+  width:400px;
+  height:400px;
+  position:absolute;
+  top:calc(50vh - 200px);
+  left:calc(50vw - 200px);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ring i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+.ring i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 6s linear infinite;
+}
+.ring i:nth-child(2) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate 4s linear infinite;
+}
+.ring i:nth-child(3) {
+  border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+  animation: animate2 10s linear infinite;
+}
+.ring:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.login {
+  position: absolute;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.login h2 {
+  font-size: 2em;
+  color: #fff;
+}
+.login .inputBx {
+  position: relative;
+  width: 100%;
+}
+.login .inputBx input {
+  position: relative;
+  width: 100%;
+  padding: 12px 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  font-size: 1.2em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+}
+.login .inputBx input[type="submit"] {
+  width: 100%;
+  background: #0078ff;
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+  cursor: pointer;
+}
+.login .inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.login .links a {
+  color: #fff;
+  text-decoration: none;
+}
+/* Estilos para el pie de página */
+footer {
+    background-color: #28a745; /* Color verde */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+@media screen and (max-width: 986px) {
+  .bgvid{
+height: 100px!important;
+  }
+}
+
+@media screen and (min-width: 986px) {
+  .bgvid.back {
+width: 100%;
+  }
+}
+.posicion{
+    background-position: ;
+}
+    
+    
+}

@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.World {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: url(Icono.png);
+    animation: World 20s linear infinite;
+    position: absolute;
+    margin-left: 20px;
+}
+.larger-circle {
+    width: 150px; /* Set the width of the larger circle */
+    height: 150px; /* Set the height of the larger circle */
+    border-radius: 50%; /* Make it a circle */
+    background-color: rgba(255, 255, 255, 1); /* Adjust background color and opacity */
+    position: absolute; /* Position it absolutely */
+    top: -3%; /* Align it to the top */
+    left: 5%; /* Align it to the center horizontally */
+    transform: translateX(-50%); /* Adjust for horizontal centering */
+    z-index: -1; /* Move it behind other elements */
+}
+@keyframes World{
+    0%{
+        background-position-x: 0; 
+    }
+    100%{
+        background-position-x: -2000px; 
+    }
+}
+/* Estilo base para el título */
+#titulo {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+  position: relative;
+}
+
+/* Estilo para el título borroso */
+.brillo {
+  color: rgba(0, 0, 255, 0.5); /* Color azul con opacidad */
+  text-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+  transition: text-shadow 0.5s;
+}
+
+/* Estilo para el título con brillo azul al pasar el cursor */
+#titulo:hover {
+  color: white;
+  text-shadow: 0 0 20px rgba(0, 0, 255, 1); /* Aumentamos el brillo al pasar el cursor */
+}
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('IMG_FONDO.jpeg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #28a745; /* Color verde */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: fixed; /* Fijar en la parte superior */
+    width: 100%; /* Ocupar todo el ancho */
+    top: 0; /* Alinear arriba */
+    z-index: 999; /* Asegurar que esté por encima del contenido */
+}
+
+/* Estilos para el título */
+.titles {
+    margin-bottom: 20px;
+}
+#colorear{
+    background-color: aqua;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #28a745; /* Color verde */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8f9fa;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+    margin-top: 100px; /* Añadir espacio para el encabezado fijo */
+    background-color: rgba(255, 107, 52, 0.8); /* Color naranja fuerte con transparencia */
+    color: #fff; /* Texto blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Estilos para los contenedores */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Estilos para las cajas de contenido */
+.box {
+    background-color: rgba(255, 107, 52, 0.8); /* Color naranja fuerte con transparencia */
+    padding: 30px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+}
+
+.box h3 {
+    color: #fff; /* Texto blanco */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.box p {
+    color: #fff; /* Texto blanco */
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.box img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.box img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #28a745; /* Color verde */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.gallery-container {
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.gallery-carousel img {
+  max-width: 100%;
+  height: auto;
+}
+.columna1{
+	margin:30px;
+	background-color: rgba(255, 107, 52, 0.8);
+}
+.columna2{
+	margin:30px;
+	background-color: rgba(255, 107, 52, 0.8);
+}
+.columna3{
+	margin:30px;
+	background-color: rgba(255, 107, 52, 0.8);
+}
+.columna4{
+	margin:30px;
+	background-color: rgba(255, 107, 52, 0.8);
+}
+.columna5{
+	margin:30px;
+	background-color: rgba(255, 107, 52, 0.8);
+}
+.columna6{
+	margin:30px;
+	background-color: rgba(255, 107, 52, 0.8);
+}
+.columna7{
+	margin:30px;
+	background-color: rgba(255, 107, 52, 0.8);
+}

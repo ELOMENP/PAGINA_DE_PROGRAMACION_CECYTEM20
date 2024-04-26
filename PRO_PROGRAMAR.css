@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.World {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: url(Icono.png);
+    animation: World 7s linear infinite;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes World{
+    0%{
+        background-position-x: 0; 
+    }
+    100%{
+        background-position-x: -2000px; 
+    }
+}
+/* Estilo base para el título */
+#titulo {
+  font-size: 36px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+  position: relative;
+}
+
+/* Estilo para el título borroso */
+.brillo {
+  color: ;/* Color azul con opacidad */
+  text-shadow: 0 0 10px green;
+  transition: text-shadow 0.5s;
+}
+
+/* Estilo para el título con brillo azul al pasar el cursor */
+#titulo:hover {
+  color: palegreen;
+  text-shadow: 0 0 20px rgba(0, 0, 255, 1); /* Aumentamos el brillo al pasar el cursor */
+}
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('IMG_FONDO.jpeg'); /* URL de la imagen de fondo */
+    background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evitar la repetición de la imagen */
+    color: #333;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: palegreen;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: fixed; /* Fijar en la parte superior */
+    width: 100%; /* Ocupar todo el ancho */
+    top: 0; /* Alinear arriba */
+    z-index: 999; /* Asegurar que esté por encima del contenido */
+}
+
+/* Estilos para el título */
+.titles {
+    margin-bottom: 20px;
+}
+
+/* Estilos para la barra de navegación */
+nav {
+
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f8f9fa;
+}
+
+/* Estilos para el pie de página */
+footer {
+   
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Estilos para el área de resultado del usuario */
+#resultadoUsuario {
+    color: #FFA500;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.texto-comillas {
+    border: 1px solid black; /* Estilo de borde */
+    padding: 5px; /* Añadimos un poco de espacio alrededor del texto */
+    margin: 5px; /* Añadimos un poco de espacio entre cada texto */
+}
+#fila{
+	
+	display:flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: center;
+	padding: 20px;
+}
+.fila_sep{
+	display: flex;
+    text-decoration: none;
+    background-color: #7469b6;
+    padding: 20px;
+    color: brown;
+	margin-right: 20px;
+}
+.fila_sep:hover{
+    background-color: blue;
+}
+#fila2{
+	display: inline-block;
+	background-color: yellow;
+	display:block;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: center;
+	padding: 20px;
+}
+#div1{
+    text-decoration: none;
+
+    color: white;
+}
+/* Estilos para el botón de ejecutar */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.vid-container{
+  position:relative;
+  height:100vh;
+  overflow:hidden;
+}
+.bgvid.back {
+  position: fixed; right: 0; bottom: 0;
+  min-width: 100%; min-height: 100%;
+  width: auto; height: auto; z-index: -100;
+}
+.inner {
+  position: absolute;
+}
+.inner-container{
+  width:4000px;
+  height:4000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow:hidden;
+  border-radius: 7px;
+}

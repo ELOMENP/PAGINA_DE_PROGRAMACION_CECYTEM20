@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAMAR</title>
+    <link rel="stylesheet" href="PRO_PROGRAMAR.css">
+</head>
+<body>
+    <header>
+    <div class="titles">
+            <div class="World"></div>
+            <h1 id="titulo" class="brillo">CECYTEM PLANTEL 20 URUAPAN<br>PROGRAMACIÓN</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="PRO_PROGRAMAR.html">Aprende a programar</a></li>
+                    <li><a href="PRO_ACERCA%20DE.html">Acerca de</a></li>
+                    <li><a href="PRO_CONTACTO.html">Contacto</a></li>
+                    <li><a href="PRO_DOCENTES.html">Docentes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div id="div1">
+	<h1>Tutorial de Programación en PSeInt</h1>
+    <p>Ingresa tu código PSeInt en el área de texto y luego ejecútalo para ver el resultado:</p>
+	</div>
+	<div id="fila">
+	<div class="fila_sep">
+	<div id="fila2">
+    <!-- Área de texto para el código PSeInt -->
+    <textarea id="codigoPSeInt" rows="10" cols="50" placeholder="Ingresa tu código PSeInt aquí">algoritmo TITULO:
+        Definir nombre Como Caracter;
+        Escribir "Ingresa tu nombre:";
+        
+        Escribir "Hola ", nombre;
+        
+fin_algoritmo</textarea>
+    
+    <br>
+    <!-- Botón para ejecutar el código -->
+    <button onclick="ejecutarCodigo()">Ejecutar Código</button>
+	</div>
+    </div>
+    <br><br>
+	<div class="fila_sep">
+    <!-- Ventana de PSeInt incrustada -->
+    <iframe id="ventanaPSeInt" src="ruta/a/tu/archivo/pseint.html" width="800" height="300" frameborder="0"></iframe>
+    </div>
+    <br><br>
+	</div>
+    <!-- Mini ventana para mostrar el resultado del usuario -->
+    <div id="resultadoUsuario"></div>
+    <footer>
+        <p>Derechos Reservados &copy; 2024</p>
+    </footer>
+    <script src="PRO_PROGRAMAR.js"></script>
+</body>
+</html>
